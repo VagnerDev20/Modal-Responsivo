@@ -1,21 +1,25 @@
 dialog{
     position: absolute;
-    width: 50vw;
-    height: 100%; 
-    margin: 0;
-    
-    left: 23%;
+    width: 80%;
+    height: 80%;
     border: none;
+    background-color: burlywood;
+    
 }
 form{
     display: grid;
-    grid-template-columns: 1fr;
+    position: relative;
+    width: 100%;
     height: 100%;
-    width: 50vw;
-    text-align: center;
-    align-items: center;
     margin: 0;
-    padding: 0; 
+    place-content: center;
 }
 dialog::backdrop{
+}
+
+@media(max-width:500px){
+    dialog{
+        width: 100%;
+        height: 100%;
+    }
 }
